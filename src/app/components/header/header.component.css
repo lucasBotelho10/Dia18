@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(192, 35, 7, 0.861);
+    height: 5em;
+    border-bottom: 1px solid #000;
+}
+
+  .btn button {
+    padding: 10px;
+    margin-left: 20px;
+    border: 1.2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: .2s;
+    font-weight: 550;
+}
+
+.btn button:hover {
+    background-color:#000;
+    color: #fff;
+    font-size: 15px;
+}
+

@@ -1,0 +1,223 @@
+
+.carta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 10em;
+}
+
+.loveCard {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 4s;
+}
+
+
+
+.loveCard.open {
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 0 10px 100px rgba(0,0,0,0.3);
+}
+
+.loveCard.open .cardFront {
+    transform: rotateY(-160deg);
+}
+
+.loveCard.open .front-text {
+    display: none;
+}
+
+.loveCard.open .wrap-deco {
+    display: none;
+}
+
+.cardFront {
+    position: relative;
+    background-color: rgb(255, 246, 246);
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
+    transition: .4s;
+}
+
+.front-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.happy, .toyou {
+    font-family: didot;
+    backface-visibility: hidden;
+    font-size: 20px;
+}
+
+.bday {
+    font-family: arial;
+    font-size: 20px;
+}
+
+.wrap-deco {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heart-icon {
+    font-size: 2.5rem;
+    color: red;
+    position: absolute;
+}
+
+.heart-icon:nth-child(1) {
+    top: 5%;
+    left: 10%;
+}
+
+.heart-icon:nth-child(2) {
+    top: 5%;
+    left: 50%;
+}
+
+.heart-icon:nth-child(3) {
+    top: 5%;
+    left: 80%;
+}
+
+.heart-icon:nth-child(4) {
+    top: 20%;
+    left: 25%;
+}
+
+.heart-icon:nth-child(5) {
+    top: 20%;
+    left: 70%;
+}
+
+.heart-icon:nth-child(6) {
+    top: 40%;
+    left: 10%;
+}
+
+.heart-icon:nth-child(7) {
+    top: 30%;
+    left: 45%;
+}
+
+.heart-icon:nth-child(8) {
+    top: 40%;
+    left: 80%;
+}
+
+.heart-icon:nth-child(9) {
+    top: 60%;
+    left: 15%;
+}
+
+.heart-icon:nth-child(10) {
+    top: 60%;
+    left: 70%;
+}
+
+.heart-icon:nth-child(11) {
+    top: 75%;
+    left: 10%;
+}
+
+.heart-icon:nth-child(12) {
+    top: 75%;
+    left: 45%;
+}
+
+.heart-icon:nth-child(13) {
+    top: 75%;
+    left: 75%;
+}
+
+.heart-icon:nth-child(14) {
+    top: 87%;
+    left: 30%;
+}
+
+.heart-icon:nth-child(15) {
+    top: 87%;
+    left: 60%;
+}
+
+
+.cardInside {
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Adjust the margin of inside-text to move it up */
+.inside-text {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px; /* This is the adjustment to move the text up */
+}
+
+.wishes {
+    text-align: left;
+    max-height: calc(100% - 120px);
+    overflow: hidden;
+}
+
+p {
+    font-family: 'Brush Script MT';
+    color: #333;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.name {
+    text-align: right;
+}
+
+@media (max-width: 375px) {
+    .loveCard {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .heart-icon {
+        font-size: 2rem; /* Slightly smaller hearts for mobile */
+    }
+
+    .happy, .toyou, .bday {
+        font-size: 18px; /* Adjust font size for mobile */
+    }
+
+    .inside-text h3, .inside-text h2 {
+        font-size: 18px; /* Adjust font size for inside text */
+    }
+
+    .wishes p {
+        font-size: 16px; /* Adjust font size for wishes text */
+    }
+
+    .name {
+        font-size: 16px; /* Adjust font size for name */
+    }
+}
