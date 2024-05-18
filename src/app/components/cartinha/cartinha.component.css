@@ -190,7 +190,7 @@
 
 }
 
-p {
+ .wishes p {
     font-family: 'Brush Script MT';
     color: #333;
     margin: 0;
@@ -198,9 +198,10 @@ p {
     font-size: 15px;
 }
 
-.name {
+ .wishes .name {
     text-align: right;
     margin-right: 15px;
+    font-family: 'Brush Script MT';
 }
 
 @media (max-width: 375px) {
