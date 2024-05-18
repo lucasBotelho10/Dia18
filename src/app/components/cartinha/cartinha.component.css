@@ -4,17 +4,21 @@
     align-items: flex-start;
     justify-content: center;
     height: 100vh;
-    margin-top: 10em;
+    
+    background-color: lightcoral;
+    
 }
 
 .loveCard {
     position: relative;
-    width: 250px;
-    height: 350px;
+    width: 150px;
+    height: 250px;
     cursor: pointer;
     transform-style: preserve-3d;
     transform: perspective(2500px);
     transition: 4s;
+    margin-right: 30px;
+    margin-top: 10em;
 }
 
 
@@ -34,7 +38,7 @@
 
 .loveCard.open .wrap-deco {
     display: none;
-    
+
 }
 
 .cardFront {
@@ -194,6 +198,7 @@ p {
 
 .name {
     text-align: right;
+    margin-right: 15px;
 }
 
 @media (max-width: 375px) {
