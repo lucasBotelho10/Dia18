@@ -1,6 +1,6 @@
 
 .carta {
-    
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -186,8 +186,8 @@
 
 .wishes {
     text-align: left;
-    max-height: calc(100% - 120px);
     overflow: hidden;
+
 }
 
 p {
@@ -195,6 +195,7 @@ p {
     color: #333;
     margin: 0;
     padding-bottom: 10px;
+    font-size: 15px;
 }
 
 .name {
@@ -221,10 +222,10 @@ p {
     }
 
     .wishes p {
-        font-size: 16px; /* Adjust font size for wishes text */
+        font-size: 15px; /* Adjust font size for wishes text */
     }
 
     .name {
-        font-size: 16px; /* Adjust font size for name */
+        font-size: 15px; /* Adjust font size for name */
     }
 }
